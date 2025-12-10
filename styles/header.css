@@ -1,0 +1,30 @@
+:root {
+
+    /*Main Colors*/
+    --color-bg-body: #f5f5f5;
+    --color-bg-header: #f7f9f7;
+    --color-text-main: #333333;
+    --color-primary: #4CAF50;
+    --color-primary-hover: #45a049;
+    --color-border-soft: #dddddd;
+    --color-shadow-soft: #aaaaaa;
+
+    /*Spacing*/
+    --header-padding-y: 1rem;
+    --header-padding-x: 3rem;
+    --radius-base: 6px;
+
+    /*Z index*/
+    --z-header: 1000;
+    --z-menu-overlay: 1100;
+    --z-hamburguer: 1101;
+
+
+}
+.site-header {
+    background-color: var(--color-bg-header);
+    box-shadow: var(--color-shadow-soft);
+    position: sticky;
+    top: 0;
+    z-index: var(--z-header);
+}
