@@ -24,7 +24,6 @@
   position: sticky;
   top: 0;
   z-index: var(--z-header);
-  overflow: hidden;
 }
 .site-header::before {
   content: "";
@@ -48,7 +47,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  z-index: 1;
 }
 
 /* Logo Section */
