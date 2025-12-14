@@ -1,0 +1,195 @@
+:root {
+  /*Main Colors*/
+  --color-bg-orange: #de7c51;
+  --color-bg-footer: #f7f9f7;
+  --color-text-main: #1b1b1c;
+  --color-primary: #63a396;
+  --color-primary-hover: #eee17a;
+  --color-border-soft: #dddddd;
+  --color-shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  /*Spacing*/
+  --footer-padding-y: 1rem;
+  --footer-padding-x: 3rem;
+  --radius-base: 6px;
+}
+
+.site-footer {
+  position: relative;
+  background: var(--color-bg-footer);
+  overflow: hidden;
+  margin-top: 3rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 73%;
+  z-index: 0;
+  background-image: url("../assets/footer-desing.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  opacity: 30%;
+}
+.footer-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem var(--footer-padding-x);
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+.footer-logo img {
+  display: block;
+  transition: transform 0.25s ease;
+}
+.footer-logo:hover img {
+  transform: scale(1.1);
+}
+.footer-slogan {
+  margin-top: 0.9rem;
+  color: var(--color-text-main);
+  max-width: 36ch;
+  font-size: 0.95rem;
+}
+.footer-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+  color: var(--color-text-main);
+}
+.footer-links {
+  list-style: none;
+  display: grid;
+  gap: 0.7rem;
+}
+.footer-links a {
+  text-decoration: none;
+  color: var(--color-text-main);
+  font-weight: 600;
+  transition: color 0.2s ease;
+  margin-left: 20px;
+}
+.footer-links a:hover {
+  color: var(--color-bg-orange);
+}
+.underline-effect > li > a {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.underline-effect > li > a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-bg-orange);
+  transition: width 0.3s ease;
+}
+.underline-effect > li > a:hover::after {
+  width: 100%;
+}
+.footer-social {
+  display: flex;
+  justify-content: space-around;
+}
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--color-bg-orange);
+  font-size: 40px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.social-btn:hover {
+  transform: scale(1.1);
+  color: #c16a45;
+}
+.footer-bottom {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: var(--color-bg-footer);
+}
+.footer-bottom-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.1rem var(--footer-padding-x);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.footer-madeby,
+.footer-hour {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.footer-madeby a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color-bg-orange);
+}
+.footer-madeby a:hover {
+  animation: pulse 2s infinite;
+}
+.footer-payments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pay-chip img {
+  width: 100px;
+  height: 100px;
+}
+.pay-chip img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: start;
+    gap: 1.8rem;
+  }
+  .footer-logo img {
+    margin: 0 auto;
+  }
+  .footer-slogan {
+    max-width: 52ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-links a {
+    margin-left: 0;
+  }
+  .footer-links {
+    justify-items: center;
+  }
+  .footer-social {
+    justify-content: center;
+    gap: 1rem;
+  }
+  .footer-bottom-inner {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 1.25rem;
+    gap: 0.75rem;
+  }
+}
