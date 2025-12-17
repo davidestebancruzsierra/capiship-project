@@ -303,11 +303,11 @@ function setActiveTab(key) {
 }
 
 function initTabs() {
-  // Agregar event listeners a los tabs
+  // Add event listeners to tabs
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => setActiveTab(tab.dataset.key));
 
-    // También permitir Enter/Space
+    // Also allow Enter/Space
     tab.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
