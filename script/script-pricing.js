@@ -41,7 +41,7 @@ const products = [
   },
   {
     id: 6,
-    name: "bean casserole",
+    name: "Bean Casserole",
     type: "Food & Restaurants",
     price: 25,
     group: "food",

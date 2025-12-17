@@ -1,8 +1,8 @@
 :root {
   --text: #2f3b56;
   --muted: #8b96a8;
-  --pill: #d8dbe2;
-  --pill-active: #6e7688;
+  --pill: #de7c51;
+  --pill-active: #c16a45;
   --card-bg: #e8edf0;
   --img-bg: #dde4e8;
   --white: #ffffff;
@@ -29,9 +29,13 @@ body {
   text-align: center;
 }
 
+.prices {
+  text-align: center;
+}
+
 .eyebrow {
   margin: 0;
-  font-size: 12px;
+  font-size: 18px;
   letter-spacing: 0.3px;
   color: var(--muted);
   font-weight: 600;
@@ -42,6 +46,7 @@ h1 {
   font-size: clamp(22px, 3.2vw, 34px);
   line-height: 1.15;
   font-weight: 700;
+  text-align: center;
 }
 
 /* Tabs Container */
@@ -93,7 +98,7 @@ h1 {
   box-shadow: 0 0 0 3px rgba(110, 118, 136, 0.25);
 }
 
-/* Indicador visual para tab activo */
+/* active tab */
 .tab[aria-selected="true"]::after,
 .tab.active::after {
   content: "";
@@ -203,7 +208,7 @@ h1 {
   font-weight: 700;
   margin: 0;
   color: var(--text);
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .cartBtn {
@@ -271,7 +276,6 @@ h1 {
   transform: scale(1.05);
 }
 
-/* Navegación por teclado - focus styles mejorados */
 .tab:focus {
   outline: 2px solid var(--pill-active);
   outline-offset: 2px;
@@ -282,7 +286,7 @@ h1 {
   outline-offset: 2px;
 }
 
-/* Smooth transition para cambio de cards */
+/* Smooth transition cards */
 .cards {
   animation: fadeIn 0.3s ease;
 }
@@ -298,7 +302,7 @@ h1 {
   }
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 480px) {
   .tab {
     min-width: 130px;
@@ -326,7 +330,6 @@ h1 {
   }
 }
 
-/* Para pantallas grandes */
 @media (min-width: 1100px) {
   .cards {
     justify-content: center;
