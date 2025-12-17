@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.signup-full-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  position: relative;
+  background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("/assets/medellin8.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.back-home-btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #63a396;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.back-home-btn:hover {
+  background: #4b7a71;
+  transform: translateX(-5px);
+}
+
+.signup-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.signup-form-wrapper {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 50px 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.signup-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2f3b56;
+  text-align: center;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+}
+
+.signup-subtitle {
+  font-size: 14px;
+  color: #8b96a8;
+  text-align: center;
+  margin: 0 0 30px 0;
+  font-weight: 500;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2f3b56;
+}
+
+.form-input {
+  padding: 12px 15px;
+  font-size: 14px;
+  border: 2px solid #e8eef0;
+  border-radius: 6px;
+  font-family: "Open Sans", sans-serif;
+  color: #2f3b56;
+  transition: all 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: #b8c5d6;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #63a396;
+  box-shadow: 0 0 0 3px rgba(222, 124, 81, 0.1);
+}
+
+.form-input:hover {
+  border-color: #63a396;
+}
+
+.form-button {
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #63a396 0%, #4b7a71 100%);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.form-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px #3d635c;
+}
+
+.form-button:active {
+  transform: translateY(0);
+}
+
+.login-link {
+  font-size: 14px;
+  color: #8b96a8;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.login-link a {
+  color: #63a396;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+  color: #4b7a71;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .signup-section {
+    padding: 30px 15px;
+  }
+
+  .back-home-btn {
+    top: 20px;
+    left: 20px;
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .signup-form-wrapper {
+    padding: 40px 30px;
+  }
+
+  .signup-title {
+    font-size: 24px;
+  }
+
+  .signup-subtitle {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+
+  .form-input {
+    padding: 11px 12px;
+    font-size: 14px;
+  }
+
+  .form-button {
+    padding: 12px 16px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-section {
+    padding: 20px 15px;
+  }
+
+  .back-home-btn {
+    top: 15px;
+    left: 15px;
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .signup-form-wrapper {
+    padding: 30px 20px;
+  }
+
+  .signup-title {
+    font-size: 20px;
+  }
+
+  .signup-subtitle {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .signup-form {
+    gap: 16px;
+  }
+
+  .form-group {
+    gap: 6px;
+  }
+
+  .form-label {
+    font-size: 13px;
+  }
+
+  .form-input {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .form-button {
+    padding: 11px 14px;
+    font-size: 14px;
+  }
+
+  .login-link {
+    font-size: 12px;
+  }
+}

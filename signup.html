@@ -1,28 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - Capiship</title>
 
-    <meta name="description"
-        content="Discover our trusted partners who help make your vacation in Medellín seamless and enjoyable.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    
-    <!--CSS Link-->
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/signup.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Capiship</title>
+
+  <meta name="description"
+    content="Discover our trusted partners who help make your vacation in Medellín seamless and enjoyable.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+  <!--CSS Link-->
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/signup.css">
 
 </head>
+
 <body>
+  <main class="signup-full-page">
+    <section class="signup-section">
+      <a href="index.html" class="back-home-btn">← Back to Home</a>
 
-    <h1>
+      <div class="signup-container">
+        <div class="signup-form-wrapper">
+          <h1 class="signup-title">Create Your Account</h1>
+          <p class="signup-subtitle">Join Capiship and start your vacation without worries</p>
 
-    Sign Up Page Coming Soon!
-    </h1>
-    
+          <form class="signup-form" id="signupForm">
+            <div class="form-group">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" id="fullName" name="fullName" class="form-input" placeholder="Enter your full name"
+                required>
+            </div>
+
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+            </div>
+
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="Enter your phone number"
+                required>
+            </div>
+
+            <button type="submit" class="form-button">Create Account</button>
+            +
+            <p class="login-link">Already have an account? <a href="index.html">Log in here</a></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
 </body>
+
 </html>
