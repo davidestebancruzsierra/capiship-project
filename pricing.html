@@ -29,7 +29,7 @@
             height="100"></a>
       </div>
       <!--Hamburguer Button-->
-      <button class="mobile-toggle" aria-label="Toggle menu" aria-control="main-nav" aria-expanded="false">
+      <button class="mobile-toggle" aria-label="Toggle menu" aria-controls="main-nav" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -74,16 +74,21 @@
       <h1 class="title">Prices</h1>
       <p class="description">Explore our Best Prices!</p>
       <div class="tabs-container" role="tablist" aria-label="categories">
-        <button class="tab" role="tab" data-key="food" aria-selected="true">Food & Restaurants</button>
-        <button class="tab" role="tab" data-key="pharmacy" aria-selected="false" tabindex="-1">Pharmacy &
+        <button class="tab" id="tab-food" role="tab" data-key="food" aria-selected="true"
+          aria-controls="tabpanel-cards">Food & Restaurants</button>
+        <button class="tab" id="tab-pharmacy" role="tab" data-key="pharmacy" aria-selected="false" tabindex="-1"
+          aria-controls="tabpanel-cards">Pharmacy &
           Wellness</button>
-        <button class="tab" role="tab" data-key="groceries" aria-selected="false" tabindex="-1">Groceries &
+        <button class="tab" id="tab-groceries" role="tab" data-key="groceries" aria-selected="false" tabindex="-1"
+          aria-controls="tabpanel-cards">Groceries &
           Drinks</button>
-        <button class="tab" role="tab" data-key="travel" aria-selected="false" tabindex="-1">Travel Essentials</button>
-        <button class="tab" role="tab" data-key="souvenirs" aria-selected="false" tabindex="-1">Souvenirs &
+        <button class="tab" id="tab-travel" role="tab" data-key="travel" aria-selected="false" tabindex="-1"
+          aria-controls="tabpanel-cards">Travel Essentials</button>
+        <button class="tab" id="tab-souvenirs" role="tab" data-key="souvenirs" aria-selected="false" tabindex="-1"
+          aria-controls="tabpanel-cards">Souvenirs &
           Drinks</button>
       </div>
-      <div class="cards" id="cards"></div>
+      <div class="cards" id="tabpanel-cards" role="tabpanel" aria-labelledby="tab-food"></div>
 
     </section>
   </main>
@@ -130,7 +135,7 @@
           </strong>
           Mon-Sun 8:00am to 10:00pm
         </p>
-        <div class="footer-payments" aria-label="Payment methods">
+        <div class="footer-payments" role="group" aria-label="Payment methods">
           <div class="pay-chip"><img src="assets/Visa.svg" alt="visa-logo"></div>
           <div class="pay-chip"><img src="assets/Mastercard.svg" alt="mastercard-logo"></div>
           <div class="pay-chip"><img src="assets/Amex.svg" alt="amex-logo"></div>

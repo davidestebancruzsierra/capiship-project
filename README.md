@@ -65,6 +65,19 @@ Open index.html in your browser
 
 Enjoy! 🛵💨
 
+🏆 Biggest Challenge
+
+**Challenge**: Making the website responsive across all devices while maintaining the visual consistency of the Capiship brand, and ensuring proper HTML/CSS validation.
+
+**Solution**: 
+- Implemented **CSS Grid and Flexbox** layouts with strategic use of `grid-template-columns: repeat(auto-fit, minmax())`
+- Created **3 breakpoints** (480px, 768px, 1024px) with comprehensive media queries
+- Used **CSS Variables** (custom properties) for consistent theming across all pages
+- Applied **`object-fit: contain`** for responsive images that maintain aspect ratio
+- Used **`clamp()`** function for fluid responsive typography that scales smoothly
+- Fixed HTML validation errors: corrected `aria-control` to `aria-controls` and added proper `role` attributes
+- Tested extensively on mobile, tablet, and desktop to ensure seamless responsiveness
+
 ✨ Author
 
 David Cruz

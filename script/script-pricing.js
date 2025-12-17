@@ -240,7 +240,7 @@ const products = [
     img: "/assets/products/Colombian soft drinks.jpg",
   },
 ];
-const cards = document.getElementById("cards");
+const cards = document.getElementById("tabpanel-cards");
 const tabs = Array.from(document.querySelectorAll(".tab"));
 let activeKey = "food";
 function cardTemplate(p) {
