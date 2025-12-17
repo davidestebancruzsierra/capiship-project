@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="../styles/index.css">
   <link rel="stylesheet" href="../styles/header.css">
   <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/categories.css">
+  <link rel="stylesheet" href="../styles/pricing.css">
+
 
 </head>
 
@@ -72,6 +75,40 @@
     </div>
 
   </header>
+
+  <main class="page-content">
+    <section class="category-hero">
+      <div class="hero-content">
+        <div class="hero-image">
+          <svg class="hero-icon groceries-icon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="95" fill="#de7c51" opacity="0.1" />
+            <g class="groceries-animation">
+              <path d="M 50 90 L 60 70 L 140 70 L 150 90 Z" fill="none" stroke="#de7c51" stroke-width="2.5" />
+              <path d="M 60 90 L 65 140 Q 100 145 135 140 L 140 90" fill="none" stroke="#de7c51" stroke-width="2.5" />
+              <circle cx="70" cy="100" r="4" fill="#c16a45" />
+              <circle cx="90" cy="105" r="4" fill="#c16a45" />
+              <circle cx="110" cy="105" r="4" fill="#c16a45" />
+              <circle cx="130" cy="100" r="4" fill="#c16a45" />
+            </g>
+          </svg>
+        </div>
+        <div class="hero-text">
+          <h1 class="title">Groceries & Drinks</h1>
+          <p class="description">Get quick access to fresh groceries, snacks, and beverages.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="products-section">
+      <div class="products-header">
+        <h2 class="products-title">Ran out of essentials? Don’t worry!
+        </h2>
+        <p class="products-subtitle">Fast delivery, anytime you need, straight to your door.</p>
+      </div>
+      <div class="cards" id="cards">
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
@@ -127,6 +164,7 @@
 
   </footer>
   <script src="../script/script-header.js"></script>
+  <script src="scripts/groceries.js"></script>
 
 </body>
 

@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="../styles/index.css">
   <link rel="stylesheet" href="../styles/header.css">
   <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/categories.css">
+  <link rel="stylesheet" href="../styles/pricing.css">
 </head>
 
 <body>
@@ -70,6 +72,36 @@
     </div>
 
   </header>
+
+  <main class="page-content">
+    <section class="category-hero">
+      <div class="hero-content">
+        <div class="hero-image">
+          <svg class="hero-icon emergency-icon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="95" fill="#de7c51" opacity="0.1" />
+            <g class="emergency-animation">
+              <circle cx="100" cy="100" r="50" fill="none" stroke="#de7c51" stroke-width="2.5" />
+              <path d="M 100 60 L 100 140" stroke="#c16a45" stroke-width="3" stroke-linecap="round" />
+              <path d="M 60 100 L 140 100" stroke="#c16a45" stroke-width="3" stroke-linecap="round" />
+            </g>
+          </svg>
+        </div>
+        <div class="hero-text">
+          <h1 class="title">Emergency Services</h1>
+          <p class="description">Got an unexpected need? We're here to help! Get quick access to emergency essentials
+            and items you forgot to pack. Fast delivery, 24/7 support.</p>
+        </div>
+      </div>
+    </section>
+    <section class="products-section">
+      <div class="products-header">
+        <h2 class="products-title">Our Selection</h2>
+        <p class="products-subtitle">Quick Solutions for your Needs!</p>
+      </div>
+      <div class="cards" id="cards">
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
@@ -125,6 +157,7 @@
 
   </footer>
   <script src="../script/script-header.js"></script>
+  <script src="scripts/emergency.js"></script>
 
 </body>
 
